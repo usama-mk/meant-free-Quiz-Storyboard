@@ -1,0 +1,25 @@
+.c-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid $border-color;
+    padding: 10px 40px;
+
+    @include Media(991){
+        padding: 5px 10px;
+    }
+    .logo {
+        width: 200px;
+        margin-top: 12px;
+        @include Media(991){
+           width: 150px;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+}

@@ -1,0 +1,18 @@
+@mixin font-face($style-name, $file, $file-format: ".ttf",  $category:"") {
+  $filepath: "../fonts/" + $file;
+  @font-face {
+    font-family: "#{$style-name}";
+    src: url($filepath + $file-format);
+  }
+  %#{$style-name} {
+    font: {
+      @if $category != "" {
+        family: "#{$style-name}", #{$category};
+      }
+      @else {
+        family: "#{$style-name}";
+        //weight: normal;
+      }
+    }
+  }
+}

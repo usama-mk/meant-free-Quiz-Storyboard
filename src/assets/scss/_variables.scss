@@ -1,0 +1,24 @@
+$primary: #707070;
+$secondary: #10c7e3;
+$white: #ffffff;
+$black: #000000;
+$text-color: #707070;
+$wild-blue: #a1a8cb;
+$alice-blue: #f6f9fe;
+$stroke-color: #e8ebf0;
+$orange: #ff7d36;
+$red: red;
+$green: #00FE38;
+$purple: #a681e3;
+$border-color: #979797;
+$linkColor: #2879F1;
+$starColor: #f8cf4f;
+$lightBlue:rgba(16, 200, 229, 0.1);
+$backgroundColor:#ffffff;
+// font sizes
+
+@mixin Media($var) {
+    @media only screen and (max-width: $var + px) {
+        @content;
+    }
+}
